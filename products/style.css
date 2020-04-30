@@ -1,0 +1,157 @@
+.products {
+  width: 100%;
+}
+
+.product-grid {
+  display: grid;
+  grid-row: 200px 200px;
+  width: 100%;
+  height: 15em;
+}
+@media only screen and (max-width: 400px) {
+  .product-grid {
+  grid-template-rows: repeat(5, 1fr);
+   grid-template-columns: repeat(1, 1fr);
+  }
+  #push {
+    min-height: 100%;
+    height: 165em;
+  }
+
+}
+@media only screen and (max-width: 600px) {
+  .product-grid {
+  grid-template-rows: repeat(5, 1fr);
+   grid-template-columns: repeat(1, 1fr);
+  }
+  #push {
+    min-height: 100%;
+    height: 190em;
+  }
+
+}
+@media only screen and (min-width: 600px) {
+  .product-grid {
+  grid-template-rows: repeat(3, 1fr);
+   grid-template-columns: repeat(2, 1fr);
+  }
+  #push {
+    min-height: 100%;
+    height: 95em;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .product-grid {
+  grid-template-rows: repeat(3, 1fr);
+   grid-template-columns: repeat(2, 1fr);
+  }
+  #push {
+    min-height: 100%;
+    height: 100em;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .product-grid {
+  grid-template-rows: repeat(3, 1fr);
+   grid-template-columns: repeat(3, 1fr);
+  }
+  #push {
+    min-height: 100%;
+    height: 95em;
+  }
+}
+body {
+  display: flex;
+  flex-direction: column;
+
+}
+#footer {
+  flex-shrink: 0;
+}
+#header {
+  display: flex;
+
+}
+.product-grid {
+  flex: 1 0 auto;
+}
+.add_to_cart {
+  position: absolute;
+  margin: 0 0.1em 0 0.1em;
+  float: left;
+  width: 2em;
+
+  padding-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
+}
+.add_to_cart:hover {
+  background-color: lightgray;
+}
+p {
+  text-align: right;
+  padding-right: 1em;
+  margin-top: 1em;
+}
+h1 {
+  margin-left: 2em;
+
+  margin-top: 2em;
+}
+h1, p {
+  color: rgb(104, 104, 104);
+  font-family: sans-serif;
+  font-variant: small-caps;
+}
+.short {
+  margin-top: 6em;
+}
+/*
+.product-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+*/
+.card {
+  display: inline-grid;
+  margin: 1em;
+  min-width: 20em;
+  max-width: 40em;
+  background-color: rgb(226, 226, 226);
+
+  box-shadow: 3px 2px 2px rgb(114, 114, 114);
+}
+@media only screen and (min-width: 1000px) {
+  .image-white {
+    height: 25em;
+
+  }
+}
+@media only screen and (min-width: 1080px) {
+  .image-white {
+    height: 40em;
+
+  }
+}
+
+.image-white {
+  background-color: white;
+  margin: 0.15em;
+  padding: 1em;
+}
+img {
+  width: 100%;
+}
+#footer {
+  position: inline;
+}
+
+.price {
+  margin-left: auto;
+  margin-right: 0;
+  text-align: right;
+  float: right;
+}

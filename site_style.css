@@ -1,0 +1,125 @@
+header {
+  background-color: ghostwhite;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 4em;
+  padding-top: 1em;
+  margin: auto 0 0 0;
+  margin-top: 0;
+}
+@media only screen and (min-resolution: 117dpi) and (max-resolution: 119dpi), only screen and (min-resolution: 131dpi) and (max-resolution: 133dpi), only screen and (min-resolution: 145dpi) and (max-resolution: 154dpi), only screen and (min-resolution: 162dpi) and (max-resolution: 164dpi), only screen and (min-resolution: 169dpi) {
+  /* Your touch-specific css goes here */
+  .cart_image {
+    margin-right: 1em;
+    padding: 0.4em;
+    margin-top: -0.1em;
+    margin-bottom: -2em;
+
+  }
+  
+  header nav a {
+    padding: 10px;
+    font-size: 16px;
+    
+  }
+}
+@media only screen and (min-resolution: 165dpi) and (max-resolution: 168dpi), only screen and (min-resolution: 155dpi) and (max-resolution: 160dpi), only screen and (min-resolution: 134dpi) and (max-resolution: 144dpi), only screen and (min-resolution: 120dpi) and (max-resolution: 130dpi), only screen and (max-resolution: 116dpi) {
+  /* Your click-specific css goes here */
+    header nav a {
+      padding: 16px;
+      font-size: 22px;
+  
+    }
+  .cart_image {
+    margin-right: 5em;
+    padding-right: 2em;
+    padding: 1em;
+  
+  }
+}
+
+.cart_image {
+  width: 2em;
+  padding-bottom: 1em;
+  float: right;
+}
+.cart_image:hover {
+  background-color: lightgray;
+}
+header nav {
+  margin: 0 auto;
+  width: 100%;
+}
+
+h1, h2, p, a, h4 {
+  color: rgb(49, 49, 49);
+  font-family: sans-serif;
+  font-variant: small-caps;
+}
+header nav a {
+  border: 1em black;
+  background-color: grey;
+  float: left;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  line-height: 25px;
+}
+
+header nav a:hover {
+  background-color: lightgray;
+}
+body {
+
+  position: relative;
+  top: 3em;
+}
+
+
+@media only screen and (max-width: 500px) {
+  .footer-left {
+    margin-left: 1em;
+
+  }
+  .footer-right {
+    padding-right: 1em;
+  }
+
+  footer p {
+    font-size: x-small;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .footer-left {
+    margin-left: 5em;
+
+  }
+  .footer-right {
+    padding-right: 5em;
+  }
+
+
+}
+.footer-left {
+  float: left;
+
+}
+.footer-right {
+  float: right;
+}
+.footer-container {
+  height: 3em;
+}
+footer p {
+  color: #7e7e7e;
+}
+footer {
+  margin: auto 0 0 0;
+  background-color: ghostwhite;
+  height: 10em;
+  width: 100%;
+  bottom: 0;
+}
